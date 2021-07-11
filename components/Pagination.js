@@ -1,6 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
 import { usePagination, DOTS } from '../components/Hooks/usePagination';
+import {v4 as uuidv4} from 'uuid'
+
 const Pagination = props => {
   const {
     onPageChange,
@@ -50,7 +52,7 @@ const Pagination = props => {
 
         return (
           <li
-            key
+            key={uuidv4()}
             className={classnames('pagination-item', {
               selected: pageNumber === currentPage
             })}

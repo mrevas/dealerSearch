@@ -7,6 +7,7 @@ import {v4 as uuidv4} from 'uuid'
 
 let PageSize = 50;
 
+
 export default function Results() {
   const globalState = useStateContext()
   const [currentPage, setCurrentPage] = useState(1);
