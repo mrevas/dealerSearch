@@ -57,7 +57,8 @@ const Search = (props) => {
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="/">Dealer Search</Navbar.Brand>
           <Form inline onSubmit={e => e.preventDefault()}>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={event => handleSearch(event)} />
+          <label htmlFor="search">Search by Model, Make, Year, First, or Last Name</label>
+            <FormControl id="search" type="text" placeholder="Search" className="mr-sm-2" onChange={event => handleSearch(event)} />
             <select name="dealership" id="dealership" onChange={event => handleDealership(event)}>
               <option value="">Any Dealership</option>
               <option value="buffalo">Buffalo John&apos;s Wild Dealership</option>

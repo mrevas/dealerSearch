@@ -52,7 +52,7 @@ const ResultsTable = ({currentTableData}) => {
 
     //calls the getTableRow function and displays data in the tbody
     return (
-        <Table striped bordered hover>
+        <Table striped bordered hover responsive>
             <thead>
                 <tr>
                     <th>#</th>

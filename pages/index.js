@@ -20,16 +20,22 @@ export default function Results() {
 
 
     return (
-        <div onClick={() => console.log(currentTableData)}>
-            <Pagination
-              className="pagination-bar"
-              currentPage={currentPage}
-              totalCount={globalState.filteredData.length}
-              pageSize={PageSize}
-              onPageChange={page => setCurrentPage(page)}
-            />
-            <Search />
-            <ResultsTable currentTableData={currentTableData} />
+        <div>
+        
+          <head>
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <title>Document</title>
+          </head>
+          <Pagination
+            className="pagination-bar"
+            currentPage={currentPage}
+            totalCount={globalState.filteredData.length}
+            pageSize={PageSize}
+            onPageChange={page => setCurrentPage(page)}
+          />
+          <Search />
+          <ResultsTable currentTableData={currentTableData} />
         </div>
     )
 }
